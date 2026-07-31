@@ -1,0 +1,227 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  scroll-behavior: smooth;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #1FA463 0%, #E81820 50%, #0B5A2A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #1FA463;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Scroll animation engine */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform, opacity;
+}
+.scroll-animate.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-100 { transition-delay: 0.1s; }
+.delay-200 { transition-delay: 0.2s; }
+.delay-300 { transition-delay: 0.3s; }
+.delay-400 { transition-delay: 0.4s; }
+
+/* Scroll-reveal engine (product-detail pages: hero + gallery + spec sections) */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform, opacity;
+}
+.scroll-reveal.reveal-left { transform: translateX(-40px); }
+.scroll-reveal.reveal-right { transform: translateX(40px); }
+.scroll-reveal.reveal-zoom { transform: scale(0.95); }
+.scroll-reveal.animated { opacity: 1; transform: translate(0) scale(1); }
+
+.azb-logo-img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 2px solid #1FA463;
+  padding: 4px;
+  box-shadow: 0 8px 24px rgba(11, 28, 57, 0.18);
+}
+
+.header-logo-img {
+  width: auto;
+  height: 56px;
+  max-width: 220px;
+  object-fit: contain;
+  display: block;
+  border-radius: 0;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: #1FA463;
+  color: #050505;
+  border: 2px solid #ffffff;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(12px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.back-to-top.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+:root {
+  --logo-green: #1FA463;
+  --logo-red: #E81820;
+  --logo-black: #050505;
+  --logo-primary: var(--logo-green);
+  --logo-secondary: var(--logo-red);
+  --logo-dark: var(--logo-black);
+}
+.azb-logo-img {
+  border-color: var(--logo-red) !important;
+  box-shadow: 0 10px 26px rgba(31, 164, 99, 0.25) !important;
+}
+.header-logo-img { border: 0 !important; box-shadow: none !important; }
+.back-to-top, .bg-brand-gold {
+  background: linear-gradient(135deg, var(--logo-green), var(--logo-red)) !important;
+  color: #ffffff !important;
+}
+.text-brand-gold, .section-label { color: var(--logo-green) !important; }
+.border-brand-gold { border-color: var(--logo-red) !important; }
+.text-gradient-gold {
+  background: linear-gradient(135deg, var(--logo-green), var(--logo-red)) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+@media (max-width: 767px) {
+  .container { max-width: 100%; }
+  .topbar-inner { flex-direction: column; gap: 8px; text-align: center; }
+  .topbar-inner > div { flex-wrap: wrap; justify-content: center; row-gap: 6px; }
+  .header-logo-img { height: 44px; max-width: 185px; }
+  #navbar > .container { padding-top: 10px; padding-bottom: 10px; }
+  #mobile-menu { left: 0; right: 0; max-height: calc(100vh - 80px); overflow-y: auto; }
+  #about, #products, #services, #contact { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+  #about .grid { grid-template-columns: 1fr; }
+  #about img { height: 220px; transform: none !important; }
+  #about .absolute.bottom-0 { position: static; transform: none !important; margin: 16px auto 0; }
+  #contact .p-10 { padding: 1.5rem; }
+  footer .grid { gap: 2rem; }
+  .back-to-top { right: 14px; bottom: 14px; width: 42px; height: 42px; }
+  .scroll-reveal.reveal-left,
+  .scroll-reveal.reveal-right { transform: translateY(20px); }
+}
+
+.back-to-top, .bg-brand-gold {
+  background: linear-gradient(135deg, #1fa463, #1fa463) !important;
+  color: #ffffff !important;
+}
+
+.slider-container { position: relative; width: 100%; height: 94vh; overflow: hidden; }
+@media (max-width: 767px) {
+  .slider-container { height: 80vh; }
+  .hero-title { font-size: 38px !important; }
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
+  z-index: 1;
+}
+.slide.active { opacity: 1; visibility: visible; z-index: 2; }
+.drop-shadow-md { text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
+.drop-shadow { text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); }
+.hover\:bg-brand-light:hover { background-color: rgb(244 246 248) !important; }
+
+.nav-link-active {
+  color: #1FA463 !important;
+  position: relative;
+}
+.nav-link-active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -4px;
+  left: 0;
+  background-color: #E81820 !important;
+}
+
+.product-card {
+  background-color: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  overflow: hidden;
+}
+.product-card:hover {
+  background-color: #0B1C39 !important;
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(11, 28, 57, 0.35);
+  border-color: rgba(31, 164, 99, 0.4);
+}
+.product-card h3, .product-card p { transition: color 0.3s ease; }
+.product-card:hover h3 { color: #ffffff !important; }
+.product-card:hover p { color: rgba(255, 255, 255, 0.8) !important; }
+
+.py-20 { padding-top: 3rem !important; padding-bottom: 3rem !important; }
+.aspect-video { aspect-ratio: 16 / 9; }
+.pad1 img { height: 170px !important; }
+
+@media (max-width: 768px) {
+  .slide .bg-cover { background-position: 60% center; }
+  .max-h-full { max-height: 170px !important; }
+  .w-full1 { height: 192px !important; }
+  .flex12 .w-full { height: 100% !important; }
+  .pad1 img { height: 240px !important; }
+}
+
+.pad { padding: 0.5rem !important; }
