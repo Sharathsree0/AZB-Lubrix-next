@@ -156,7 +156,7 @@ export default function Navbar() {
                     Grease <i className="fas fa-chevron-right text-xs ml-2 text-gray-400 group-hover/link:text-white"></i>
                   </Link>
                   <div className="absolute left-[calc(100%+6px)] top-0 w-60 bg-white shadow-xl rounded-md border border-gray-100 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 transform translate-x-2 group-hover/sub:translate-x-0 py-2">
-                    <Link href="/automotivegreases" className="block px-4 py-2.5 text-sm text-slate-600 hover:bg-green-600 hover:text-white transition">Automotive Greases</Link>
+                    <Link href="/automotive-greases" className="block px-4 py-2.5 text-sm text-slate-600 hover:bg-green-600 hover:text-white transition">Automotive Greases</Link>
                   </div>
                 </div>
 
