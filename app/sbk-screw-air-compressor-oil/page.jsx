@@ -3,17 +3,17 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
-export default function CuttingOil() {
+export default function CompressorOil() {
     // Gallery State
     const [mainImage, setMainImage] = useState('img/Drum-Red-(2).png');
-    const [mainLabel, setMainLabel] = useState('SBK NEAT CUTTING OIL');
+    const [mainLabel, setMainLabel] = useState('SBK SCREW AIR COMPRESSOR OIL');
     const [activeThumb, setActiveThumb] = useState(0);
 
     // Thumbnails definition
     const thumbnails = [
-        { src: 'img/Drum-Red-(2).png', alt: 'SBK NEAT CUTTING OIL 1L', desc: 'SBK NEAT CUTTING OIL  - 1L' },
-        { src: 'img/Drum-Red-(2).png', alt: 'SBK NEAT CUTTING OIL 4L', desc: 'SBK NEAT CUTTING OIL  4L' },
-        { src: 'img/Drum-Red-(2).png', alt: 'SBK NEAT CUTTING OIL 5L', desc: 'SBK NEAT CUTTING OIL  5L' }
+        { src: 'img/Drum-Red-(2).png', alt: 'SBK PESADO Hydraulic Oil AW 1L', desc: 'SBK SCREW AIR COMPRESSOR OIL - 1L' },
+        { src: 'img/Drum-Red-(2).png', alt: 'SBK PESADO Hydraulic Oil AW 4L', desc: 'SBK SCREW AIR COMPRESSOR OIL 4L' },
+        { src: 'img/Drum-Red-(2).png', alt: 'SBK PESADO Hydraulic Oil AW 5L', desc: 'SBK SCREW AIR COMPRESSOR OIL 5L' }
     ];
 
     // Intersection Observer for scroll animations
@@ -53,7 +53,7 @@ export default function CuttingOil() {
             {/* Hero Banner Section */}
             <section 
                 className="relative bg-[#030712] text-white py-12 md:py-16 font-sans border-b border-slate-900 overflow-hidden min-h-[350px] flex items-center bg-cover bg-center bg-no-repeat" 
-                style={{ backgroundImage: "linear-gradient(to right, rgba(3, 7, 18, 0.95) 30%, rgba(3, 7, 18, 0.6) 70%, rgba(3, 7, 18, 0.4) 100%), url('productbanner/cuttingoil.jpeg')" }}
+                style={{ backgroundImage: "linear-gradient(to right, rgba(3, 7, 18, 0.95) 30%, rgba(3, 7, 18, 0.6) 70%, rgba(3, 7, 18, 0.4) 100%), url('productbanner/industrial.jpg')" }}
             >
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
                     
@@ -64,7 +64,7 @@ export default function CuttingOil() {
                         <i className="fas fa-chevron-right text-[10px] text-slate-500"></i>
                         <Link href="/hydraulic-oil" className="hover:text-white transition">Industrial Lubricants</Link>
                         <i className="fas fa-chevron-right text-[10px] text-slate-500"></i>
-                        <span className="text-white font-medium">Cutting Oil</span>
+                        <span className="text-white font-medium">Compressor Oil</span>
                     </nav>
 
                     <div className="mb-4 scroll-reveal delay-200">
@@ -75,12 +75,12 @@ export default function CuttingOil() {
 
                     <div className="max-w-4xl space-y-4">
                         <h1 className="text-white font-serif text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight leading-tight md:leading-none scroll-reveal delay-300">
-                            SBK NEAT CUTTING OIL     <br className="hidden md:block" />
-                            <span> </span>
+                            SBK SCREW AIR COMPRESSOR OIL     <br className="hidden md:block" />
+                            <span></span>
                         </h1>
                         
                         <p className="text-slate-300 text-sm md:text-base leading-relaxed max-w-2xl font-light pt-1 scroll-reveal delay-400">
-                            SBK Neat Cutting Oil is a premium quality chlorine-free neat cutting oil formulated from highly refined mineral base oils and advanced lubricity additives. The product is designed to provide excellent cooling, lubrication, anti-wear protection, and superior surface finish during machining operations. It is suitable for a wide range of light to medium-duty machining applications on ferrous and non-ferrous metals.
+                            SBK Screw Air Compressor Oil is a premium performance lubricant formulated from highly refined base oils and advanced additive technology. It is specifically engineered to deliver excellent wear protection, thermal stability, rapid water separation, and resistance to oxidation and carbon formation in rotary screw air compressors.
                         </p>
                     </div>
                 </div>
@@ -99,7 +99,7 @@ export default function CuttingOil() {
                                     className="max-h-64 w-auto object-contain mb-4 transition-transform duration-300 group-hover:scale-105" 
                                 />
                                 <p className="text-slate-500 font-medium text-lg">{mainLabel}</p>
-                                <span className="inline-block mt-4 px-4 py-1 bg-brand-light text-brand-blue font-semibold text-xs rounded-full uppercase tracking-wider"> </span>
+                                <span className="inline-block mt-4 px-4 py-1 bg-brand-light text-brand-blue font-semibold text-xs rounded-full uppercase tracking-wider">AW </span>
                             </div>
                             <span className="absolute top-4 left-4 bg-brand-blue text-white font-bold text-[10px] tracking-wider uppercase px-2.5 py-1 rounded"></span>
                         </div>
@@ -133,28 +133,31 @@ export default function CuttingOil() {
                     <div className="lg:col-span-7 space-y-6 scroll-reveal reveal-right">
                         <div>
                             <span className="text-brand-gold font-semibold text-sm tracking-wider uppercase"></span>
-                            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mt-1">SBK NEAT CUTTING OIL</h2>
+                            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mt-1">SBK SCREW AIR COMPRESSOR OIL</h2>
                             <p className="text-xl font-medium text-slate-500 mt-2"></p>
                         </div>
 
                         <p className="text-slate-600 leading-relaxed">
-                            SBK Neat Cutting Oil is a premium quality chlorine-free neat cutting oil formulated from highly refined mineral base oils and advanced lubricity additives. The product is designed to provide excellent cooling, lubrication, anti-wear protection, and superior surface finish during machining operations. It is suitable for a wide range of light to medium-duty machining applications on ferrous and non-ferrous metals.
+                            SBK Screw Air Compressor Oil is a premium quality, high-performance lubricant specially formulated for rotary screw 
+                            air compressors operating under high temperature and heavy-duty industrial conditions. It is blended with highly 
+                            refined base oils and advanced ashless additive technology to provide excellent oxidation stability, superior anti-wear 
+                            protection, rust prevention, and long service life. The oil ensures reliable compressor operation by minimizing sludge, 
+                            varnish, and carbon formation while maintaining high efficiency and stable lubrication film strength under severe load 
+                            conditions. ISO VG grade is typically recommended for high-temperature screw compressors and continuous-duty 
+                            industrial applications.
                         </p>
 
                         <div className="flex flex-wrap gap-3 pt-2">
                             <div className="bg-slate-100 px-4 py-2 rounded-lg text-xs font-medium text-slate-700 border border-slate-200">
-                                <strong>Quantity:</strong> pail, drum
-                            </div>
-                            <div className="bg-slate-100 px-4 py-2 rounded-lg text-xs font-medium text-slate-700 border border-slate-200">
-                                <strong>Standard:</strong> 
+                                <strong>Quantity:</strong> pail, drum, IBC
                             </div>
                         </div>
 
                         <div className="flex flex-wrap gap-4 pt-4 border-t border-gray-100">
-                            <a href="https://wa.me/97167447843?text=Hello,%20I%20would%20like%20to%20inquire%20about%20SBK%20NEAT%20CUTTING%20OIL" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-brand-blue hover:bg-opacity-90 text-white font-medium rounded-lg shadow-md transition duration-200 text-sm flex items-center gap-2">
+                            <a href="https://wa.me/97167447843?text=Hello,%20I%20would%20like%20to%20inquire%20about%20SBK%20SCREW%20AIR%20COMPRESSOR%20OIL" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-brand-blue hover:bg-opacity-90 text-white font-medium rounded-lg shadow-md transition duration-200 text-sm flex items-center gap-2">
                                 <i className="fab fa-whatsapp text-lg"></i> Inquire About This Product
                             </a>
-                            <a href="pdf/05-Neat-cutting-oil.pdf" download className="px-6 py-3 border border-slate-300 hover:bg-slate-50 text-slate-700 font-medium rounded-lg transition duration-200 text-sm flex items-center gap-2">
+                            <a href="pdf/14-SCREW AIR COMPRESSOR OIL copy.pdf" download className="px-6 py-3 border border-slate-300 hover:bg-slate-50 text-slate-700 font-medium rounded-lg transition duration-200 text-sm flex items-center gap-2">
                                 <i className="fas fa-file-pdf text-red-500"></i> Download Product Data Sheet
                             </a>
                         </div>
@@ -169,50 +172,56 @@ export default function CuttingOil() {
                         <ul className="space-y-3">
                             <li className="flex items-start gap-3">
                                 <i className="fas fa-check-circle text-emerald-500 mt-1 flex-shrink-0"></i>
-                                <span className="text-slate-600 text-sm"><strong>Excellent lubricating performance</strong></span>
+                                <span className="text-slate-600 text-sm"><strong>Excellent oxidation and thermal stability for extended oil life</strong></span>
                             </li>
                             <li className="flex items-start gap-3">
                                 <i className="fas fa-check-circle text-emerald-500 mt-1 flex-shrink-0"></i>
-                                <span className="text-slate-600 text-sm"><strong>Improves cutting tool life</strong></span>
+                                <span className="text-slate-600 text-sm"><strong>Superior anti-wear protection for rotors, bearings, and gears</strong></span>
                             </li>
                             <li className="flex items-start gap-3">
                                 <i className="fas fa-check-circle text-emerald-500 mt-1 flex-shrink-0"></i>
-                                <span className="text-slate-600 text-sm"><strong>Provides superior surface finish</strong></span>
+                                <span className="text-slate-600 text-sm"><strong>Strong resistance to sludge, varnish, and carbon deposits</strong></span>
                             </li>
                             <li className="flex items-start gap-3">
                                 <i className="fas fa-check-circle text-emerald-500 mt-1 flex-shrink-0"></i>
-                                <span className="text-slate-600 text-sm"><strong>Reduces friction and tool wear</strong></span>
+                                <span className="text-slate-600 text-sm"><strong>Excellent rust and corrosion protection.</strong></span>
                             </li>
                             <li className="flex items-start gap-3">
                                 <i className="fas fa-check-circle text-emerald-500 mt-1 flex-shrink-0"></i>
-                                <span className="text-slate-600 text-sm"><strong>Good oxidation and thermal stability</strong></span>
+                                <span className="text-slate-600 text-sm"><strong>Low foaming with rapid air release properties </strong></span>
                             </li>
                             <li className="flex items-start gap-3">
                                 <i className="fas fa-check-circle text-emerald-500 mt-1 flex-shrink-0"></i>
-                                <span className="text-slate-600 text-sm"><strong>Low mist and low Odor formulation</strong></span>
+                                <span className="text-slate-600 text-sm"><strong>Superior water separation (demulsibility) characteristics </strong></span>
                             </li>
                             <li className="flex items-start gap-3">
                                 <i className="fas fa-check-circle text-emerald-500 mt-1 flex-shrink-0"></i>
-                                <span className="text-slate-600 text-sm"><strong>Excellent chip flushing characteristics</strong></span>
+                                <span className="text-slate-600 text-sm"><strong>Maintains stable oil film at high operating temperatures </strong></span>
                             </li>
                             <li className="flex items-start gap-3">
                                 <i className="fas fa-check-circle text-emerald-500 mt-1 flex-shrink-0"></i>
-                                <span className="text-slate-600 text-sm"><strong>Suitable for high-speed machining operations</strong></span>
+                                <span className="text-slate-600 text-sm"><strong>Reduces maintenance downtime and operating costs </strong></span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <i className="fas fa-check-circle text-emerald-500 mt-1 flex-shrink-0"></i>
+                                <span className="text-slate-600 text-sm"><strong>Supports long service intervals under industrial use</strong></span>
                             </li>
                         </ul>
 
                         <div className="bg-brand-light bg-opacity-40 p-5 rounded-xl border border-gray-200 mt-6">
                             <h3 className="font-bold text-slate-800 text-sm mb-2">MAIN APPLICATIONS</h3>
                             <p className="text-slate-600 text-sm leading-relaxed">
-                                SBK Neat Cutting Oil is recommended for turning, drilling, milling, reaming, tapping, broaching, gear cutting, threading, and automatic machining operations. The product is suitable for use on steel, alloy steel, cast iron, aluminum, copper, and brass components where high machining accuracy and improved tool life are required.
+                                SBK Screw Air Compressor Oil is suitable for oil-flooded rotary screw air compressors, heavy-duty industrial screw compressors, high-temperature continuous operation systems, stationary and portable compressor units, and air systems requiring higher viscosity oil for improved sealing and thermal stability. It is widely used in environments where compressors operate at elevated discharge temperatures and under sustained load conditions.
                             </p>
                         </div>
 
                         <div className="bg-slate-50 p-4 rounded-xl border border-gray-200">
                             <h3 className="font-bold text-slate-800 text-xs uppercase tracking-wider mb-2">SPECIFICATIONS & RECOMMENDATIONS</h3>
-                            <p className="text-slate-600 text-sm leading-relaxed">
-                                SBK Neat Cutting Oil is recommended for general-purpose neat cutting oil applications and is suitable for light to medium-duty machining operations in conventional and CNC machines. Recommended for use in automotive workshops, engineering industries, fabrication plants, and general metalworking applications.
-                            </p>
+                            <ul className="text-slate-600 text-sm space-y-1 list-disc pl-4">
+                                <li>DIN 51506 VDL</li>
+                                <li>ISO 6743-3 DAG</li>
+                                <li>Suitable for continuous duty industrial air compression systems</li>
+                            </ul>
                         </div>
                     </div>
 
@@ -220,56 +229,73 @@ export default function CuttingOil() {
                     <div id="download-tds" className="space-y-4 scroll-reveal reveal-zoom">
                         <h2 className="text-2xl font-bold text-slate-800">PRODUCT SPECIFICATIONS</h2>
                         <div className="overflow-hidden border border-gray-200 rounded-xl shadow-sm overflow-x-auto">
-                            <table className="w-full text-left border-collapse bg-white text-sm min-w-[500px]">
+                            <table className="w-full text-left border-collapse bg-white text-sm min-w-[600px]">
                                 <thead>
                                     <tr className="bg-slate-50 border-b border-gray-200">
                                         <th className="px-4 py-3 font-semibold text-slate-700">TEST PARAMETER</th>
                                         <th className="px-4 py-3 font-semibold text-slate-700">TEST METHOD</th>
-                                        <th colSpan="2" className="px-4 py-3 font-semibold text-slate-700 text-center">TYPICAL VALUE</th>
+                                        <th colSpan="3" className="px-4 py-3 font-semibold text-slate-700 text-center">TYPICAL VALUE</th>
+                                    </tr>
+                                    <tr className="bg-slate-100/50 border-b border-gray-200 text-xs text-slate-500">
+                                        <th colSpan="2" className="px-4 py-1">Grade</th>
+                                        <th className="px-3 py-1 text-center">32</th>
+                                        <th className="px-3 py-1 text-center">46</th>
+                                        <th className="px-3 py-1 text-center">68</th>
                                     </tr>
                                 </thead>
                                 <tbody className="divide-y divide-gray-100 text-slate-600">
                                     <tr className="hover:bg-slate-50/50">
-                                        <td className="px-4 py-3 font-medium text-slate-800">Grade</td>
-                                        <td className="px-4 py-3 text-slate-400"></td>
-                                        <td className="px-3 py-3 text-center font-mono font-medium text-slate-800">22</td>
-                                        <td className="px-3 py-3 text-center font-mono font-medium text-slate-800">32</td>
-                                    </tr>
-                                    <tr className="hover:bg-slate-50/50">
                                         <td className="px-4 py-3 font-medium text-slate-800">Appearance</td>
                                         <td className="px-4 py-3 text-slate-400">Visual</td>
-                                        <td className="px-3 py-3 text-center font-mono">Clear and bright</td>
-                                        <td className="px-3 py-3 text-center font-mono">Clear and bright</td>
+                                        <td colSpan="3" className="px-3 py-3 text-center font-mono">Clear &amp; bright</td>
                                     </tr>
                                     <tr className="hover:bg-slate-50/50">
                                         <td className="px-4 py-3 font-medium text-slate-800">KV @ 40°C</td>
                                         <td className="px-4 py-3 text-slate-400">ASTM D445</td>
-                                        <td className="px-3 py-3 text-center font-mono">22.0</td>
-                                        <td className="px-3 py-3 text-center font-mono">30.5</td>
+                                        <td className="px-3 py-3 text-center font-mono">32</td>
+                                        <td className="px-3 py-3 text-center font-mono">46</td>
+                                        <td className="px-3 py-3 text-center font-mono">68</td>
+                                    </tr>
+                                    <tr className="hover:bg-slate-50/50">
+                                        <td className="px-4 py-3 font-medium text-slate-800">KV @ 100°C</td>
+                                        <td className="px-4 py-3 text-slate-400">ASTM D445</td>
+                                        <td className="px-3 py-3 text-center font-mono">6.1</td>
+                                        <td className="px-3 py-3 text-center font-mono">7.8</td>
+                                        <td className="px-3 py-3 text-center font-mono">9.2</td>
+                                    </tr>
+                                    <tr className="hover:bg-slate-50/50">
+                                        <td className="px-4 py-3 font-medium text-slate-800">Viscosity Index</td>
+                                        <td className="px-4 py-3 text-slate-400">ASTM D2270</td>
+                                        <td className="px-3 py-3 text-center font-mono">141</td>
+                                        <td className="px-3 py-3 text-center font-mono">139</td>
+                                        <td className="px-3 py-3 text-center font-mono">112</td>
                                     </tr>
                                     <tr className="hover:bg-slate-50/50">
                                         <td className="px-4 py-3 font-medium text-slate-800">Density @ 15°C</td>
                                         <td className="px-4 py-3 text-slate-400">ASTM D4052</td>
-                                        <td className="px-3 py-3 text-center font-mono">0.8545</td>
-                                        <td className="px-3 py-3 text-center font-mono">0.8552</td>
+                                        <td className="px-3 py-3 text-center font-mono">0.8359</td>
+                                        <td className="px-3 py-3 text-center font-mono">0.8438</td>
+                                        <td className="px-3 py-3 text-center font-mono">0.8565</td>
                                     </tr>
                                     <tr className="hover:bg-slate-50/50">
                                         <td className="px-4 py-3 font-medium text-slate-800">Flash Point</td>
                                         <td className="px-4 py-3 text-slate-400">ASTM D92</td>
-                                        <td className="px-3 py-3 text-center font-mono">150</td>
-                                        <td className="px-3 py-3 text-center font-mono">200</td>
+                                        <td className="px-3 py-3 text-center font-mono">&ge; 195</td>
+                                        <td className="px-3 py-3 text-center font-mono">&ge; 220</td>
+                                        <td className="px-3 py-3 text-center font-mono">&ge; 220</td>
                                     </tr>
                                     <tr className="hover:bg-slate-50/50">
                                         <td className="px-4 py-3 font-medium text-slate-800">Pour Point</td>
                                         <td className="px-4 py-3 text-slate-400">ASTM D97</td>
-                                        <td className="px-3 py-3 text-center font-mono">-15</td>
-                                        <td className="px-3 py-3 text-center font-mono">-12</td>
+                                        <td className="px-3 py-3 text-center font-mono">-24</td>
+                                        <td className="px-3 py-3 text-center font-mono">-30</td>
+                                        <td className="px-3 py-3 text-center font-mono">-24</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                         <p className="text-xs text-slate-400 italic">
-                            * Note: Typical value may vary slightly. Please contact your SBK representative for the current batch COA (Certificate Of Analysis)
+                            * Note: Typical value, may vary slightly. Please contact your SBK representative for the current batch COA (Certificate Of Analysis)
                         </p>
                     </div>
 
