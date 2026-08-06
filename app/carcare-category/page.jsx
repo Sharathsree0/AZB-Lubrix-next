@@ -73,7 +73,7 @@ export default function CarCareProductsPage() {
                 
                 {/* 1. SBK PenetraX */}
                 <Link
-                  href="/sbk-penetrax"
+                  href="/carcare-category/sbk-penetrax"
                   className="group bg-white rounded-xl shadow-md hover:shadow-xl border border-gray-100 overflow-hidden transition-all duration-300 flex flex-col h-full block"
                 >
                   <div className="relative bg-gradient-to-b from-gray-50 to-slate-100 p-6 flex justify-center items-center h-56 shrink-0">
@@ -101,7 +101,7 @@ export default function CarCareProductsPage() {
 
                 {/* 2. SBK CarbClean Pro */}
                 <Link
-                  href="/sbk-carbclean"
+                  href="/carcare-category/sbk-carbclean"
                   className="group bg-white rounded-xl shadow-md hover:shadow-xl border border-gray-100 overflow-hidden transition-all duration-300 flex flex-col h-full block"
                 >
                   <div className="relative bg-gradient-to-b from-gray-50 to-slate-100 p-6 flex justify-center items-center h-56 shrink-0">
@@ -129,7 +129,7 @@ export default function CarCareProductsPage() {
 
                 {/* 3. SBK BrakeClean Pro */}
                 <Link
-                  href="/sbk-breakclean"
+                  href="/carcare-category/sbk-breakclean"
                   className="group bg-white rounded-xl shadow-md hover:shadow-xl border border-gray-100 overflow-hidden transition-all duration-300 flex flex-col h-full block"
                 >
                   <div className="relative bg-gradient-to-b from-gray-50 to-slate-100 p-6 flex justify-center items-center h-56 shrink-0">
@@ -157,7 +157,7 @@ export default function CarCareProductsPage() {
 
                 {/* 4. SBK Degrease Pro */}
                 <Link
-                  href="/sbk-degrease"
+                  href="/carcare-category/sbk-degrease"
                   className="group bg-white rounded-xl shadow-md hover:shadow-xl border border-gray-100 overflow-hidden transition-all duration-300 flex flex-col h-full block"
                 >
                   <div className="relative bg-gradient-to-b from-gray-50 to-slate-100 p-6 flex justify-center items-center h-56 shrink-0">
@@ -185,7 +185,7 @@ export default function CarCareProductsPage() {
 
                 {/* 5. SBK Chain Lube pro */}
                 <Link
-                  href="/sbk-chainlube"
+                  href="/carcare-category/sbk-chainlube"
                   className="group bg-white rounded-xl shadow-md hover:shadow-xl border border-gray-100 overflow-hidden transition-all duration-300 flex flex-col h-full block"
                 >
                   <div className="relative bg-gradient-to-b from-gray-50 to-slate-100 p-6 flex justify-center items-center h-56 shrink-0">
