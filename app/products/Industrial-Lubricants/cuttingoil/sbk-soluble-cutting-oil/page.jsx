@@ -5,15 +5,15 @@ import Link from 'next/link';
 
 export default function SBKSolubleCuttingOil() {
     // Gallery State
-    const [mainImage, setMainImage] = useState('img/Drum-Red-(2).png');
+    const [mainImage, setMainImage] = useState('/img/Drum-Red-(2).png');
     const [mainLabel, setMainLabel] = useState('SBK SOLUBLE CUTTING OIL');
     const [activeThumb, setActiveThumb] = useState(0);
 
     // Thumbnails definition
     const thumbnails = [
-        { src: 'img/Drum-Red-(2).png', alt: 'SBK SOLUBLE CUTTING OIL  1L', desc: 'SBK SOLUBLE CUTTING OIL  - 1L' },
-        { src: 'img/Drum-Red-(2).png', alt: 'SBK SOLUBLE CUTTING OIL  4L', desc: 'SBK SOLUBLE CUTTING OIL  4L' },
-        { src: 'img/Drum-Red-(2).png', alt: 'SBK SOLUBLE CUTTING OIL  5L', desc: 'SBK SOLUBLE CUTTING OIL  5L' }
+        { src: '/img/Drum-Red-(2).png', alt: 'SBK SOLUBLE CUTTING OIL  1L', desc: 'SBK SOLUBLE CUTTING OIL  - 1L' },
+        { src: '/img/Drum-Red-(2).png', alt: 'SBK SOLUBLE CUTTING OIL  4L', desc: 'SBK SOLUBLE CUTTING OIL  4L' },
+        { src: '/img/Drum-Red-(2).png', alt: 'SBK SOLUBLE CUTTING OIL  5L', desc: 'SBK SOLUBLE CUTTING OIL  5L' }
     ];
 
     // Intersection Observer for scroll animations
@@ -53,7 +53,7 @@ export default function SBKSolubleCuttingOil() {
             {/* Hero Banner Section */}
             <section 
                 className="relative bg-[#030712] text-white py-12 md:py-16 font-sans border-b border-slate-900 overflow-hidden min-h-[350px] flex items-center bg-cover bg-center bg-no-repeat" 
-                style={{ backgroundImage: "linear-gradient(to right, rgba(3, 7, 18, 0.95) 30%, rgba(3, 7, 18, 0.6) 70%, rgba(3, 7, 18, 0.4) 100%), url('productbanner/cuttingoil.jpeg')" }}
+                style={{ backgroundImage: "linear-gradient(to right, rgba(3, 7, 18, 0.95) 30%, rgba(3, 7, 18, 0.6) 70%, rgba(3, 7, 18, 0.4) 100%), url('/productbanner/cuttingoil.jpeg')" }}
             >
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
                     
@@ -160,7 +160,7 @@ export default function SBKSolubleCuttingOil() {
                             <a href="https://wa.me/971569966391?text=Hello,%20I%20would%20like%20to%20inquire%20about%20SBK%20soluble%20cutting%20OIL" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-brand-blue hover:bg-opacity-90 text-white font-medium rounded-lg shadow-md transition duration-200 text-sm flex items-center gap-2">
                                 <i className="fab fa-whatsapp text-lg"></i> Inquire About This Product
                             </a>
-                            <a href="pdf/08-SOLUBLE-CUTTING-OIL.pdf" download className="px-6 py-3 border border-slate-300 hover:bg-slate-50 text-slate-700 font-medium rounded-lg transition duration-200 text-sm flex items-center gap-2">
+                            <a href="/pdf/08-SOLUBLE-CUTTING-OIL.pdf" download className="px-6 py-3 border border-slate-300 hover:bg-slate-50 text-slate-700 font-medium rounded-lg transition duration-200 text-sm flex items-center gap-2">
                                 <i className="fas fa-file-pdf text-red-500"></i> Download Product Data Sheet
                             </a>
                         </div>

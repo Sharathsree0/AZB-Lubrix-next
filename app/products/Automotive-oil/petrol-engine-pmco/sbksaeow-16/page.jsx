@@ -162,7 +162,7 @@ export default function SBKFullySyntheticSAE0W16APISP() {
                             <a href="https://wa.me/971569966391?text=Hello,%20I%20am%20interested%20in%20inquiring%20about%20the%20SBK%20Fully%20Synthetic%20SAE%200W-16%20API%20SP%20engine%20oil." target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-brand-blue hover:bg-opacity-90 text-white font-medium rounded-lg shadow-md transition duration-200 text-sm flex items-center gap-2">
                                 <i className="fab fa-whatsapp text-lg"></i> Inquire About This Product
                             </a>
-                            <a href="pdf/01-SAE 0W-16 API SP copy.pdf" download="SAE_0W-16_API_SP_TDS.pdf" className="px-6 py-3 border border-slate-300 hover:bg-slate-50 text-slate-700 font-medium rounded-lg transition duration-200 text-sm flex items-center gap-2">
+                            <a href="/pdf/01-SAE 0W-16 API SP copy.pdf" download="SAE_0W-16_API_SP_TDS.pdf" className="px-6 py-3 border border-slate-300 hover:bg-slate-50 text-slate-700 font-medium rounded-lg transition duration-200 text-sm flex items-center gap-2">
                                 <i className="fas fa-file-pdf text-red-500"></i> Download Product Data Sheet
                             </a>
                         </div>

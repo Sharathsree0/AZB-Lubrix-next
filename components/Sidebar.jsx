@@ -23,7 +23,7 @@ const categories = [
       { href: '/products/Industrial-Lubricants/turbineoil', text: 'Turbine Oil' },
       { href: '/products/Industrial-Lubricants/compressoroil', text: 'Compressor Oil' },
       { href: '/products/Industrial-Lubricants/industrialgear', text: 'Industrial Gear Oil' },
-      { href: '/products/cuttingoil', text: 'Metal Working Fluid' },
+      { href: '/products/Industrial-Lubricants/cuttingoil', text: 'Metal Working Fluid' },
       { href: '/products/Industrial-Lubricants/generalpurpose', text: 'General Purpose Oil' },
       { href: '/products/Industrial-Lubricants/heat-transfer-fluid', text: 'Heat Transfer Fluid' },
       { href: '/products/Industrial-Lubricants/flushingoil', text: 'Flushing Oil' },

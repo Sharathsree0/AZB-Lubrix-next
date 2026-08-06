@@ -5,15 +5,15 @@ import Link from 'next/link';
 
 export default function SBKDieselEngineOilOpalTX() {
     // Gallery State
-    const [mainImage, setMainImage] = useState('productimage/5L-opal-tx-sae-20w-50-api-ch-4.png');
+    const [mainImage, setMainImage] = useState('/productimage/5L-opal-tx-sae-20w-50-api-ch-4.png');
     const [mainLabel, setMainLabel] = useState('SBK OPAL TX 5L');
     const [activeThumb, setActiveThumb] = useState(2);
 
     // Thumbnails definition
     const thumbnails = [
-        { src: 'productimage/1L-opal-tx-sae-20w-50-api-ch-4.png', alt: 'SBK OPAL TX 1L', desc: 'SBK OPAL TX - 1L' },
-        { src: 'productimage/4L-opal-tx-sae-20w-50-api-ch-4.png', alt: 'SBK OPAL TX 4L', desc: 'SBK OPAL TX 4L' },
-        { src: 'productimage/5L-opal-tx-sae-20w-50-api-ch-4.png', alt: 'SBK OPAL TX 5L', desc: 'SBK OPAL TX 5L' }
+        { src: '/productimage/1L-opal-tx-sae-20w-50-api-ch-4.png', alt: 'SBK OPAL TX 1L', desc: 'SBK OPAL TX - 1L' },
+        { src: '/productimage/4L-opal-tx-sae-20w-50-api-ch-4.png', alt: 'SBK OPAL TX 4L', desc: 'SBK OPAL TX 4L' },
+        { src: '/productimage/5L-opal-tx-sae-20w-50-api-ch-4.png', alt: 'SBK OPAL TX 5L', desc: 'SBK OPAL TX 5L' }
     ];
 
     // Intersection Observer for scroll animations
@@ -53,7 +53,7 @@ export default function SBKDieselEngineOilOpalTX() {
             {/* Hero Banner Section */}
             <section 
                 className="relative bg-[#030712] text-white py-12 md:py-16 font-sans border-b border-slate-900 overflow-hidden min-h-[350px] flex items-center bg-cover bg-center bg-no-repeat" 
-                style={{ backgroundImage: "linear-gradient(to right, rgba(3, 7, 18, 0.95) 30%, rgba(3, 7, 18, 0.6) 70%, rgba(3, 7, 18, 0.4) 100%), url('productbanner/diesel.jpeg')" }}
+                style={{ backgroundImage: "linear-gradient(to right, rgba(3, 7, 18, 0.95) 30%, rgba(3, 7, 18, 0.6) 70%, rgba(3, 7, 18, 0.4) 100%), url('/productbanner/diesel.jpeg')" }}
             >
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
                     
@@ -162,7 +162,7 @@ export default function SBKDieselEngineOilOpalTX() {
                             <a href="https://wa.me/971569966391?text=Hello,%20I%20would%20like%20to%20inquire%20about%20DIESEL%20ENGINE%20OIL%20OPAL%20TX%20SAE%2020W-50,%20API%20CH-4." target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-brand-blue hover:bg-opacity-90 text-white font-medium rounded-lg shadow-md transition duration-200 text-sm flex items-center gap-2">
                                 <i className="fab fa-whatsapp text-lg"></i> Inquire About This Product
                             </a>
-                            <a href="pdf/24_SAE 20W-50 API CH-4 copy.pdf" download className="px-6 py-3 border border-slate-300 hover:bg-slate-50 text-slate-700 font-medium rounded-lg transition duration-200 text-sm flex items-center gap-2">
+                            <a href="/pdf/24_SAE 20W-50 API CH-4 copy.pdf" download className="px-6 py-3 border border-slate-300 hover:bg-slate-50 text-slate-700 font-medium rounded-lg transition duration-200 text-sm flex items-center gap-2">
                                 <i className="fas fa-file-pdf text-red-500"></i> Download Product Data Sheet
                             </a>
                         </div>

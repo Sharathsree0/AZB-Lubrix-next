@@ -162,7 +162,7 @@ export default function SBKDiamond7000() {
                             <a href="https://wa.me/971569966391?text=Hello,%20I%20would%20like%20to%20inquire%20about%20PETROL%20ENGINE%20OIL%20DIAMOND%207000%20SAE%205W-30,%20API%20SM." target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-brand-blue hover:bg-opacity-90 text-white font-medium rounded-lg shadow-md transition duration-200 text-sm flex items-center gap-2">
                                 <i className="fab fa-whatsapp text-lg"></i> Inquire About This Product
                             </a>
-                            <a href="pdf/12_SAE 5W-30 API SM copy.pdf" download="SBK_Diamond_7000_SAE_5W30_API_SM_PDS.pdf" className="px-6 py-3 border border-slate-300 hover:bg-slate-50 text-slate-700 font-medium rounded-lg transition duration-200 text-sm flex items-center gap-2">
+                            <a href="/pdf/12_SAE 5W-30 API SM copy.pdf" download="SBK_Diamond_7000_SAE_5W30_API_SM_PDS.pdf" className="px-6 py-3 border border-slate-300 hover:bg-slate-50 text-slate-700 font-medium rounded-lg transition duration-200 text-sm flex items-center gap-2">
                                 <i className="fas fa-file-pdf text-red-500"></i> Download Product Data Sheet
                             </a>
                         </div>
