@@ -185,6 +185,10 @@ body {
   color: #1FA463 !important;
   position: relative;
 }
+.text-base {
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
 .nav-link-active::after {
   content: '';
   position: absolute;

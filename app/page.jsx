@@ -12,23 +12,23 @@ const slides = [
 ];
 
 const products = [
-  { href: '/petrol-engine-pmco', title: 'Automotive', img: '/portfolio/automot_1254x800.jpg', alt: 'SBK Opal heavy duty diesel oil' },
-  { href: '/hydraulic-oil', title: 'Industrial Lubricants', img: '/portfolio/indt.jpeg', alt: 'SBK Opal heavy duty diesel oil' },
-  { href: '/4t-motorcycle-oil', title: 'Motorcycle Oil & Outboard Oils', img: '/portfolio/motc_1000x800.jpg', alt: 'SBK marine trunk piston oil product' },
-  { href: '/universal-tractor-transmission-oil', title: 'Agricultural & Off-Highway Lubricants', img: '/portfolio/agr_1000x800.jpg', alt: 'SBK specialty lubricant pail' },
-  { href: '/knitting-oil', title: 'Textile Oils', img: '/portfolio/TEXTILEOIL.png', alt: 'SBK heavy duty grease cartridge' },
-  { href: '/rock-drill-oil', title: 'Mining Oils', img: '/portfolio/MINNING.png', alt: 'SBK 4T motorcycle fluid pack' },
-  { href: '/trunk-piston-marine-oil', title: 'Marine Oils', img: '/portfolio/marineoil.png', alt: 'SBK transformer and process oil pack' },
-  { href: '/transformeroil', title: 'Transformer Oils', img: '/portfolio/transformeroil.png', alt: 'SBK transformer and process oil pack' },
-  { href: '/petroleumjelly', title: 'White Oil & Petroleum Jelly', img: '/portfolio/whiteoil.png', alt: 'SBK transformer and process oil pack' },
-  { href: '/carcare-category', title: 'Car Care Products', img: '/portfolio/carcareproducts.png', alt: 'SBK premium additive and car care range pack' },
+  { href: '/products/Automotive-oil/petrol-engine-pmco', title: 'Automotive', img: '/portfolio/automot_1254x800.jpg', alt: 'SBK Opal heavy duty diesel oil', delay: 'delay-100' },
+  { href: '/products/Industrial-Lubricants/hydraulic-oil', title: 'Industrial Lubricants', img: '/portfolio/indt.jpeg', alt: 'SBK Opal heavy duty diesel oil', delay: 'delay-100' },
+  { href: '/products/Motorcycle-oils-&-Outboard-oils/4t-motorcycle-oil', title: 'Motorcycle Oil & Outboard Oils', img: '/portfolio/motc_1000x800.jpg', alt: 'SBK marine trunk piston oil product', delay: 'delay-200' },
+  { href: '/products/Agricultural-&-off-Highway-Lubrucants/universal-tractor-transmission-oil', title: 'Agricultural & Off-Highway Lubricants', img: '/portfolio/agr_1000x800.jpg', alt: 'SBK specialty lubricant pail', delay: 'delay-300' },
+  { href: '/products/Textile-oil/knitting-oil', title: 'Textile Oils', img: '/portfolio/TEXTILEOIL.png', alt: 'SBK heavy duty grease cartridge', delay: '' },
+  { href: '/products/Mining-oil/rock-drill-oil', title: 'Mining Oils', img: '/portfolio/MINNING.png', alt: 'SBK 4T motorcycle fluid pack', delay: 'delay-100' },
+  { href: '/products/Marine-oil/trunk-piston-marine-oil', title: 'Marine Oils', img: '/portfolio/marineoil.png', alt: 'SBK transformer and process oil pack', delay: 'delay-200' },
+  { href: '/products/Special-products/transformeroil', title: 'Transformer Oils', img: '/portfolio/transformeroil.png', alt: 'SBK transformer and process oil pack', delay: 'delay-200' },
+  { href: '/products/Special-products/whiteoil', title: 'White Oil & Petroleum Jelly', img: '/portfolio/whiteoil.png', alt: 'SBK transformer and process oil pack', delay: 'delay-200' },
+  { href: '/carcare-category', title: 'Car Care Products', img: '/portfolio/carcareproducts.png', alt: 'SBK premium additive and car care range pack', delay: 'delay-300' },
 ];
 
 export default function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [videoPlaying, setVideoPlaying] = useState(false);
 
-  // Ported from "4. HERO BANNER AUTOPLAY SLIDER" in index.php
+  // Hero Banner Autoplay Slider
   useEffect(() => {
     const intervalTime = 5000;
     const timer = setInterval(() => {
@@ -37,7 +37,7 @@ export default function HomePage() {
     return () => clearInterval(timer);
   }, [currentSlide]);
 
-  // Touch swipe support (ported)
+  // Touch swipe support
   useEffect(() => {
     const container = document.querySelector('.slider-container');
     if (!container) return;
@@ -190,7 +190,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Products */}
+      {/* Products with Hover Scale Animation Restored */}
       <section className="py-20 px-6 lg:px-12 bg-slate-900 overflow-hidden" id="products">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14 scroll-animate">
@@ -205,7 +205,7 @@ export default function HomePage() {
               <Link
                 key={p.href}
                 href={p.href}
-                className="product-card block rounded-2xl scroll-animate group pad transition-all duration-300 ease-in-out hover:scale-[2] hover:z-50 relative"
+                className={`product-card block rounded-2xl scroll-animate ${p.delay} group pad transition-all duration-300 ease-in-out hover:scale-[2] hover:z-50 relative bg-slate-800 border border-slate-700/50 p-4`}
               >
                 <div className="min-h-[56px] flex items-center justify-center mb-2">
                   <h3 className="font-display font-600 text-lg text-white text-center uppercase">{p.title}</h3>
@@ -215,17 +215,6 @@ export default function HomePage() {
                 </div>
               </Link>
             ))}
-          </div>
-
-          <div className="text-center mt-12 scroll-animate">
-            <a
-              href="/catalogue.pdf"
-              target="_blank"
-              className="text-white px-8 py-3.5 rounded-full font-bold inline-block hover:bg-white hover:text-[#0B1C39] transition shadow-lg text-sm"
-              style={{ backgroundColor: 'var(--logo-secondary)' }}
-            >
-              Download Full Product Catalogue →
-            </a>
           </div>
         </div>
       </section>
@@ -272,10 +261,10 @@ export default function HomePage() {
           <h2 className="text-3xl md:text-4xl font-bold text-brand-blue mb-6">Ready to Upgrade Your Lubricants?</h2>
           <p className="text-brand-blue/80 max-w-2xl mx-auto mb-8 text-lg">Get in touch with our sales team for a personalized quote or to request a sample.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="#contact" className="bg-brand-blue text-white px-8 py-4 rounded font-bold text-lg hover:bg-brand-dark transition-all shadow-lg">
+            <Link href="/quote" className="bg-brand-blue text-white px-8 py-4 rounded font-bold text-lg hover:bg-brand-dark transition-all shadow-lg inline-block">
               Request a Quote
-            </a>
-            <a href="#" className="bg-transparent border-2 border-brand-blue text-brand-blue px-8 py-4 rounded font-bold text-lg hover:bg-brand-blue hover:text-white transition-all">
+            </Link>
+            <a href="/catalogue.pdf" target="_blank" className="bg-transparent border-2 border-brand-blue text-brand-blue px-8 py-4 rounded font-bold text-lg hover:bg-brand-blue hover:text-white transition-all inline-block">
               Download Brochure
             </a>
           </div>
@@ -336,7 +325,6 @@ export default function HomePage() {
             </div>
 
             <div className="lg:w-2/3 bg-white p-10">
-              {/* NOTE: form submission is a placeholder — wire up to your Next.js backend/API route */}
               <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
