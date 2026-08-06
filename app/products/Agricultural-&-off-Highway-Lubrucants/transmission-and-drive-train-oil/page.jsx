@@ -176,7 +176,7 @@ export default function TransmissionAndDriveTrainOil() {
                                     </div>
                                 )}
 
-                                <Link href="/Agricultural-&-off-Highway-Lubrucants/transmission-and-drive-train-oil/sbk-transmission-and-drive-train-oil-sae-10w" className="group bg-white rounded-xl shadow-md hover:shadow-xl border border-gray-100 overflow-hidden transition-all duration-300 flex flex-col h-full block">
+                                <Link href="/products/Agricultural-&-off-Highway-Lubrucants/transmission-and-drive-train-oil/sbk-transmission-and-drive-train-oil-sae-10w" className="group bg-white rounded-xl shadow-md hover:shadow-xl border border-gray-100 overflow-hidden transition-all duration-300 flex flex-col h-full block">
                                     <div className="relative bg-gradient-to-b from-gray-50 to-slate-100 p-6 flex justify-center items-center h-56 shrink-0">
                                         <span className="absolute top-3 left-3 bg-green-600 text-white text-[10px] font-extrabold px-2 py-0.5 rounded shadow">AGRICULTRAL AND OFF-HIGHWAY LUBRICANTS</span>
                                         <img src="/img/Drum-Red-(2).png" alt="SBK 4T" className="h-44 object-contain group-hover:scale-105 transition duration-300 drop-shadow-md"/>
